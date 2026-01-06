@@ -1,0 +1,13 @@
+name: Hello GitHub Actions
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    send-hello:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Exibir mensagem no Log
+              run: echo "GitHub Actions!"
